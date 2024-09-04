@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Meu projeto HTML</title>
+    <meta charset="UTF-8" />
+</head>
+<body>
+    <section id="topo">
+    <h1>Módulo 1 - Primeiros Passos com HTML</h1>
+    </section>
+    <hr>
+
+    <h2>Índice</h2>
+    <ul>
+        <li><a href="#hsitoria-dos-computadores">História dos computadores</a></li>
+        <li><a href="#clients">O que são <i>Clients</i>?</a></li>
+        <li><a href="#servers">O que são <i>Servers</i>?</a></li>
+        <li><a href="#estrutura-basica-html">Como é uma estrutura básica de um HTML?</a></li>
+        <li><a href="#listas">Entendendo a diferença entre listas ordenadas e não ordenadas</a></li>
+        <li><a href="#links"> Links de referências</a></li>
+    </ul>
+
+    <section id="hsitoria-dos-computadores">
+        <h2>História dos computadores</h2>
+        <p>O primeiro computador eletromecânico foi o <strong>Mark I</strong>, construído em 1944, e faz parte da 1ª
+            geração de computadores.</p>
+        <p>Em 1943, o <strong>Colossus</strong> foi criado pelo lado britânico durante a Segunda Guerra Mundial, sendo o
+            primeiro computador eletrônico de propósito específico, desenvolvido para <i>criptoanálise</i>. Em 1946, o
+            <strong>ENIAC</strong> foi lançado nos Estados Unidos, sendo o primeiro computador eletrônico de uso geral,
+            usado para cálculos militares.
+        </p>
+        <p>A segunda geração de computadores ocorreu entre 1959 e 1965, caracterizada pela <strong>substituição das
+                válvulas por transistores</strong>, o que permitiu a diminuição do tamanho dos computadores e o aumento
+            de sua eficiência.</p>
+        <p>A terceira geração de computadores ocorreu entre 1965 e 1970, marcada pela introdução dos circuitos
+            integrados (<i>chips</i>), que aumentaram ainda mais a capacidade de processamento e a miniaturização dos sistemas.
+        </p>
+        <p>A <strong>quarta geração começou em 1971 e continua até hoje</strong>, sendo caracterizada pela invenção do
+            microprocessador, que levou à expansão dos computadores pessoais (PCs), tornando-os acessíveis ao público em
+            geral.</p>
+        <a href="#topo"><small>(Voltar ao topo)</small></a>
+    </section>
+
+    <section id="clients">
+        <h2>O que são clients</h2>
+        <p>O lado cliente é quando você consome a informação de algum lugar. Baseado na internet (Web), o client é o
+            dispositivo que está consumindo aquela informação na internet (celulares, notebooks, etc.).</p>
+        <p>Você <strong>"solicita"</strong> uma informação pela internet, o servidor recebe essa solicitação, a processa
+            e devolve arquivos estáticos, que são <i>HTML</i>, <i>CSS</i>, <i>JavaScript</i>, imagens... A velocidade desse retorno depende
+            da velocidade da sua conexão com a internet e também do tamanho dos arquivos que você solicitou. Nesse
+            processo, o seu navegador gera a memória cache, onde ele vai armazenar essa informação retornada pelo
+            servidor.</p>
+        <p><strong>Client</strong> = O lado do cliente, parte visual e de uso do usuário.</p>
+        <a href="#topo"><small>(Voltar ao topo)</small></a>
+    </section>
+
+    <section id="servers">
+        <h2>O que são servers</h2>
+        <p>O lado servidor é onde as informações são armazenadas, processadas e enviadas para os dispositivos que as
+            solicitam na internet. No contexto da web, o <strong>server</strong> é o computador ou sistema que hospeda os sites,
+            aplicativos e serviços que os usuários acessam a partir de seus dispositivos (celulares, notebooks, etc.).
+        </p>
+        <p>Quando um cliente <strong>"solicita"</strong> uma informação pela internet, o servidor é responsável por receber essa
+            solicitação, processar os dados necessários e devolver os arquivos solicitados, como <i>HTML</i>, <i>CSS</i>, <i>JavaScript</i>,
+            imagens, entre outros. A eficiência desse processo depende do desempenho do servidor, da complexidade da
+            solicitação e da qualidade da conexão entre o servidor e o cliente.</p>
+        <p>O servidor também gerencia as permissões de acesso, segurança dos dados e mantém a informação disponível para
+            ser acessada a qualquer momento pelos usuários.</p>
+        <p><strong>Server</strong> = O lado do fornecedor, responsável por armazenar, processar e fornecer informações
+            aos usuários.</p>
+        <a href="#topo"><small>(Voltar ao topo)</small></a>
+    </section>
+
+    <section id="estrutura-basica-html">
+        <h2>Como é uma estrutura básica de um HTML?</h2>
+        <ul>
+            <li>
+                <p><strong>&lt;!DOCTYPE html&gt;</strong> : Declara o tipo de documento e a versão do HTML. Aqui, indica
+                    que o documento é HTML5.</p>
+            </li>
+            <li>
+                <p><strong>&lt;html lang="pt-BR"&gt;</strong> : Elemento raiz do documento HTML. O atributo lang define
+                    o idioma do documento.</p>
+            </li>
+            <li>
+                <p><strong>&lt;head&gt;</strong> : Contém metadados sobre o documento, como o título, links para
+                    arquivos de estilo (CSS) e scripts (JavaScript), e informações de codificação de caracteres.</p>
+            </li>
+            <li>
+                <p><strong>&lt;meta charset="UTF-8"&gt;</strong> : Define a codificação de caracteres do documento como
+                    UTF-8, que é um padrão amplamente utilizado.</p>
+            </li>
+            <li>
+                <p><strong>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</strong> : Faz
+                    com que a página seja responsiva e se ajuste ao tamanho da tela do dispositivo.</p>
+            </li>
+            <li>
+                <p><strong>&lt;title&gt;</strong> : Define o título da página, que aparece na aba do navegador.</p>
+            </li>
+            <li>
+                <p><strong>&lt;link rel="stylesheet" href="styles.css"&gt;</strong> : Link para um arquivo CSS externo
+                    que define o estilo da página.</p>
+            </li>
+            <li>
+                <p><strong>&lt;body&gt;</strong> : Contém o conteúdo visível da página, incluindo cabeçalhos, parágrafos,
+                    imagens, links, e outros elementos.</p>
+            </li>
+            <li>
+                <p><strong>&lt;header&gt;</strong> : Seção de cabeçalho da página, geralmente contendo o título e o menu de navegação.</p>
+            </li>
+            <li>
+                <p><strong>&lt;nav&gt;</strong> : Seção de navegação que geralmente contém links para outras partes do site.</p>
+            </li>
+            <li>
+                <p><strong>&lt;main&gt;</strong> : Contém o conteúdo principal da página.</p>
+            </li>
+            <li>
+                <p><strong>&lt;section&gt;</strong> : Seções distintas de conteúdo dentro da página.</p>
+            </li>
+            <li>
+                <p><strong>&lt;footer&gt;</strong> : Contém informações de rodapé, como direitos autorais e informações de contato.</p>
+            </li>
+            <li>
+                <p><strong>&lt;script src="script.js"&gt;&lt;/script&gt;</strong> : Link para um arquivo JavaScript externo que pode adicionar interatividade à página.</p>
+            </li>
+        </ul>
+        <a href="#topo"><small>(Voltar ao topo)</small></a>
+    </section>
+
+    <section id="listas">
+        <h2>Entendendo a diferença entre listas ordenadas e não ordenadas</h2>
+        <p>Listas Ordenadas (<strong>ol</strong>): Usadas quando a ordem dos itens é importante. Cada item é numerado
+            automaticamente. Por exemplo:</p>
+        <ol>
+            <li>Primeiro item</li>
+            <li>Segundo item</li>
+            <li>Terceiro item</li>
+        </ol>
+        <p>Listas Não Ordenadas (<strong>ul</strong>): Usadas quando a ordem dos itens não é importante. Cada item é precedido por um
+            marcador. Por exemplo:</p>
+        <ul>
+            <li>Item um</li>
+            <li>Item dois</li>
+            <li>Item três</li>
+        </ul>
+        <a href="#topo"><small>(Voltar ao topo)</small></a>
+    </section>
+
+    <section id="links">
+    <h2>Links de referências</h2>
+    <ul>
+        <li><a href="https://www.dio.me/" target="_blank">https://www.dio.me/</a></li>
+        <li><a href="https://www.w3schools.com/" target="_blank">https://www.w3schools.com/</a></li>
+    </ul>
+    <a href="#topo"><small>(Voltar ao topo)</small></a>
+    </section>
+</body>
+</html>
